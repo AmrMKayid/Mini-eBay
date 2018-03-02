@@ -10,7 +10,7 @@
     </div>
     <div class="card-body">
       <h3 class="card-title">{{ product.price | currency }}</h3>
-      <a href="#" class="btn btn-primary " (click)="addItemToCart(product._id)" >Add to cart <i class="fas fa-cart-plus"></i></a>
+      <button  class="btn btn-primary " (click)="addItemToCart(product._id)" >Add to cart <i class="fas fa-cart-plus"></i></button>
     </div>
     <div class="card-footer text-muted">
       Listed on: <strong>{{ product.createdAt | date }}</strong> | Sold by: <strong>{{ product.sellerName }}</strong>
