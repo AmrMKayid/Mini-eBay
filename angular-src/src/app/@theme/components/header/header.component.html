@@ -1,0 +1,22 @@
+<div class="header-container left">
+  <div class="logo-containter">
+    <a (click)="toggleSidebar()" class="navigation">
+      <i class="nb-menu"></i>
+    </a>
+    <div class="logo" (click)="goToHome()">
+      <img src="../../../../favicon.png" style="width: 50px; height: 50px; border-radius: 50%;" />
+      T20:
+      <span>Mini-eBay</span>
+    </div>
+  </div>
+  <ngx-theme-switcher></ngx-theme-switcher>
+</div>
+
+<nb-actions size="medium" class="header-container right">
+  <nb-action>
+  <nb-user [menu]="userMenu" [name]="user?.username" (menuClick)="onMenuClick($event)" *ngIf="authService.isLoggedIn()"></nb-user>
+  <button type="submit" class="btn btn-hero-success main-btn center" *ngIf="!authService.isLoggedIn()" (click)="signup()">Sign Up</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="submit" class="btn btn-hero-success main-btn center" *ngIf="!authService.isLoggedIn()" (click)="login()">Login</button>
+  </nb-action>
+</nb-actions>
