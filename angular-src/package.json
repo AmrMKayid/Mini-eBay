@@ -31,7 +31,7 @@
     "intl": "^1.2.5",
     "ionicons": "^3.0.0",
     "jwt-decode": "^2.2.0",
-    "moment": "^2.20.1",
+    "moment": "^2.29.2",
     "nebular-icons": "^1.0.6",
     "ng2-order-pipe": "^0.1.5",
     "ng2-search-filter": "^0.4.7",
